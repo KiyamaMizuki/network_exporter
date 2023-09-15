@@ -9,6 +9,4 @@ jobs:
     steps:
     - name: test
       run: |
-        curl https://5hcuzmai4jhyovzjhx4cslzeya0rkjsg.lambda-url.ap-northeast-1.on.aws/ \
-        -H "Content-Type: application/json" \
-        -d 'aaaaaaaaaaaa/aaaa'
+        curl ${{secrets.TEST_URL}}
