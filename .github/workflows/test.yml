@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: test
       run: |
-        echo ${{env.TEST_URL}}
-        echo ${{vars.secrets.TEST_URL}}
-        curl ${{secrets.TEST_URL}}
+        echo ${{ env.TEST_URL }}
+        echo ${{ vars.secrets.TEST_URL }}
+        curl ${{ secrets.TEST_URL }}
