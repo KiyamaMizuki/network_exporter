@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
     - name: test
-    run: |
+      run: |
       curl https://5hcuzmai4jhyovzjhx4cslzeya0rkjsg.lambda-url.ap-northeast-1.on.aws/ \
       -H "Content-Type: application/json" \
       -d 'aaaaaaaaaaaa/aaaa'
