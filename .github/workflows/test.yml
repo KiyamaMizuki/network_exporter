@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
     - name: test
+      env:
+        URL: ${{ secrets.TEST_URL }}
       run: |
-        echo ${{ env.TEST_URL }}
-        echo ${{ vars.secrets.TEST_URL }}
+        echo "URL"
+        echo "$env:URL"
         curl ${{ secrets.TEST_URL }}
