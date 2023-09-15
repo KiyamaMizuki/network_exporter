@@ -11,4 +11,4 @@ jobs:
       run: |
         echo ${{ vars.TEST_URL }}
         echo "$env:URL"
-        curl ${{ vars.TEST_URL }}
+        curl -c 5 ${{ vars.TEST_URL }}
