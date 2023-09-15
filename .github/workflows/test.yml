@@ -5,6 +5,7 @@ on:
 
 jobs:
   curl_test:
+    runs-on: ubuntu-latest 
     steps:
     - name: test
       run: |
