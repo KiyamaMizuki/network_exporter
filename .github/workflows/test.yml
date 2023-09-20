@@ -16,3 +16,4 @@ jobs:
         echo ${{ vars.TEST_URL }}
         echo ${{vars.TEST_URL}}
         echo ${{secrets.SC_URL}}
+        echo "aaa"
