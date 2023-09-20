@@ -14,5 +14,6 @@ jobs:
         branch=$(echo feature/a/a | sed -e 's/\//\-/g')
         echo ${branch}
         echo ${{ vars.TEST_URL }}
-        echo ${{vars.TEST_URL}}
         echo ${{secrets.SC_URL}}
+        echo "aaa"
+        echo "aaaaa"
